@@ -4,20 +4,78 @@
     <meta charset="UTF-8">
     <title>Assignment 05 - DOM Practice</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+
+// Step 1
+        // function step1() {
+        //     alert('Step1 - I have been clicked');
+        // }
+
+        //need something about onload
+        // function step5() {
+        // alert('Step 5 - I have been clicked like all the rest');
+        // }
+        // const btn5 = document.getElementById('btnStep5');
+        // btn5.addEventListener('click', step5);
+ 
+        document.addEventListener('DOMContentLoaded', btn5);
+
+        function step5(){
+            alert('Step 5 - I have been clicked like all the rest');
+        }
+
+        function btn5() {
+        let button5 = document.getElementById('btnStep5');
+       button5.addEventListener('click', step5);
+        }
+
+    </script>
 </head>
 <body>
 
-    <button>Click me - Step 1</button>
+<!-- Step 1 -->
+    <button onclick='step1()'>Click me - Step 1</button>
 
+ <!-- Step 2 -->
     <button id="btnStep2">Click me - Step 2</button>
 
+<!-- Step 3 -->
     <button id="btnStep3">Click me - Step 3</button>
 
+<!-- Step 4 -->
     <button id="btnStep4">Click me - Step 4</button>
 
-    <button id='startStep9'>Start Step 9</button>
-    <button id='stopStep9'>Stop Step 9</button>
+    <!-- Step 5 -->
+    <button id="btnStep5">Click me - Step 5</button>
+
+    <!-- Step 6 -->
+    <button><a href="http://www.google.com" id='redirect'>Visit Google - Step 6</a></button>
+
+    <!--Step 7  -->
+<!-- <form> -->
+        <input type="text" name="input" id="text" placeholder="enter something here - Step 7">
+        <button id="step7">Click to Submit - Step 7</button>
+<!-- </form> -->
+
+<!-- Step 8 -->
+    <button id="btnStep8">Click me - Step 8</button>
+
+<!-- Step 9 -->
+    <button id='startStep9'>Start - Step 9</button>
+    <button id='stopStep9'>Stop - Step 9</button>
+
+    <!-- Step 10 -->
+    <div>
+        <select id="drop">
+            <option value="Daddy Dog">Daddy Dog</option>
+            <option value="Boy Dog">Boy Dog</option>
+            <option value="Boss Dog">Boss Dog</option>
+            <option value="Baby Dog">Baby Dog</option>
+        </select>
+        <button id="step10">Select - Step 10</button>
+    </div>
     
-    <script src="/js/dom-practice.js"></script>
+    <script src="/Assignment 6 JS/js/dom-practice.js"></script>
 </body>
 </html>

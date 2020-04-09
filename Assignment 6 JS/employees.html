@@ -14,41 +14,48 @@
     <link rel="stylesheet" href="empl-mgt-styles.css">
 
 </head>
-
+           
 <body>
 
     <div class="container">
         <header class="add-input text-center text-light my-4">
             <h1 class="mb-4">Employee Management App</h1>
 
-            <!-- <form class="add-input text-light"> -->
 
                 <form class="search">
                     <input type="text" class="form-control mb-2" name="search" placeholder="search employees">
                     <i class="fas fa-search"></i>
                 </form>
 
+            <form id="addInput text-light" name="addInput" action="#">
+
                 <h3>Add an employee</h3>
-                <form class="name">
-                    <input type="text" class="form-control mb-2" name="name" placeholder="employee name">
-                </form>
-                <form class="title">
-                    <input type="text" class="form-control mb-2" name="title" placeholder="title">
-                </form>
-                <form class="ext">
-                    <input type="text" class="form-control mb-4" name="extension" placeholder="extension">
-                </form>
+                <!-- <form class="name"> -->
+                    <input type="text" 
+                    id="name"
+                    class="form-control mb-2" name="name" placeholder="employee name" >
+                <!-- </form> -->
+                <!-- <form class="title"> -->
+                    <input type="text" 
+                    id="title"
+                    class="form-control mb-2" name="title" placeholder="title">
+                <!-- </form> -->
+                <!-- <form class="ext"> -->
+                    <input type="text" 
+                    id="ext" class="form-control mb-4" name="extension" placeholder="extension">
+                <!-- </form> -->
 
-            <!-- </form> -->
+            </form>
 
-            <button class="addBtn">Add</button>
+<button id="addBtn" class="addBtn" type="submit" name="submit" value="submit">Add</button>
+
         </header>
     </div>
 
     <div class="table mx-auto text-light">
         <table class="table row-count table-striped table-dark">
-            <div class="table count mx-auto text-light">
-        <h3>Showing <span class="mb-4">0</span> Employees</h3>
+            <div class="table-rows count mx-auto text-light">
+        <h3>Showing <span class="emplCount mb-4">0</span> Employees</h3>
     </div>
     <thead>
                 <tr>
@@ -103,12 +110,12 @@
                         <i class="far fa-trash-alt delete"></i>
                     </td>
                 </tr>
-
+  
             </tbody>
         </table>
     </div>
 
-    <script src="js/employee-management.js"></script>
+    <script src="js/employee-managementkk.js"></script>
 </body>
 
 </html>
